@@ -9,7 +9,6 @@ namespace WordCounter.Models
     {
         Word = word;
     }
-
     public Game(string word, string sentence)
     {
         Word = word;
