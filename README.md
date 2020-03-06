@@ -1,21 +1,21 @@
-# _Pierre's Bakery_
+# _Word Counter_
 
-#### _Independent Project 7, Feb 2020_
+#### _Independent Project 7, March 2020_
 
 #### By _**Kristina Hengster Tintor**_
 
 ## Description
-Console application for a bakery that allows users to select bread, pastries or both. Once user enters their selections, application returns total price for items selected.
+Console application that gathers both a word and sentence from a user, then checks how frequently the word appears in the sentence. It checks for full word matches only. (For instance, if provided the word "cat" and sentence "I'm walking to the cathedral." the first three letters of the word cathedral would not be counted.) 
 
 ## Project Specifications
 
-User chooses if they want to buy bread, pastries or both.
-* Input: B
-* Output: "How many loaves of bread would you like?"
+User is prompted to type in the word. First spec will check if object is instantiated. 
+* Input: world
+* Output: Object is instantiated.
 
-User enters number of items they wish to purchase and application calculates the price for them
-* Input: 3
-* Output: 15
+User inputs a sentence when prompted and application returns how many times previously inputted word appears in the sentence.
+* Input: "Hello world"
+* Output: "Word 'world' appears 1 time in your sentence".
 
 ## Setup/Installation Requirements
 
@@ -37,7 +37,7 @@ _No known bugs at this time._
 
 ## Support and contact details
 
-_Have a bug or an issue with this application? [Open a new issue](https://github.com/kristinaht/bakery) here on GitHub._
+_Have a bug or an issue with this application? [Open a new issue](https://github.com/kristinaht/wordcounter) here on GitHub._
 
 ## Technologies Used
 
