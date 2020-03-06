@@ -12,7 +12,7 @@ namespace WordCounter.Tests
     {
       Game newGame = new Game("world");
       
-      Assert.AreEqual("world", getType(newGame));
+      Assert.AreEqual(typeof(Game), newGame.GetType());
     }
 
   }
