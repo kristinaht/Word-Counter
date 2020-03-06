@@ -28,9 +28,11 @@ namespace WordCounter.Tests
 
     public void SplitString_SplitStringIntoStringArray_StringArray()
     {
-      Game newGame = new Game("hi", "Today is Friday.");
-      string[] result = Game.SplitString("Today is Friday.");
-      CollectionAssert.AreEqual(result, newGame.SplitString("Today is Friday."));
+      string sampleString = "Today is Friday.";
+      Game testGame = new Game("hi", sampleString);
+      
+      string[] testArray = {"Today", "is", "Friday"};
+      CollectionAssert.AreEqual(testArray, testGame.SplitString(sampleString));
     }
 
   }
