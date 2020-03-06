@@ -5,9 +5,9 @@ namespace WordCounter.Models
     public string Word { get; set; }
     public string Sentence { get; set; }
 
-    public WordCounter(string word, string sentence)
+    public Game(string word, string sentence)
     {
-
+        Word = word;
     }
 
   }

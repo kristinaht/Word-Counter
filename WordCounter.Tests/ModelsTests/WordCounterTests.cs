@@ -1,5 +1,6 @@
 using System;
 using WordCounter.Models;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace WordCounter.Tests
 {
@@ -10,8 +11,8 @@ namespace WordCounter.Tests
     public void GameConstructor_CreatesInstanceOfGame_Game()
     {
       Game newGame = new Game("world");
-      string testUserInput = "world";
-      Assert.AreEqual(typeof(testUserInput), getType(newGame.Word));
+      
+      Assert.AreEqual("world", getType(newGame));
     }
 
   }
