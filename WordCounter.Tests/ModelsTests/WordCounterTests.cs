@@ -1,6 +1,7 @@
 using System;
 using WordCounter.Models;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System.Collections.Generic;
 
 namespace WordCounter.Tests
 {
@@ -23,6 +24,14 @@ namespace WordCounter.Tests
       Assert.AreEqual(typeof(Game), newGame.GetType());
     }
 
+    [TestMethod]
+
+    public void SplitString_SplitStringIntoStringArray_StringArray()
+    {
+      Game newGame = new Game("hi", "Today is Friday.");
+      string[] result = Game.SplitString("Today is Friday.");
+      CollectionAssert.AreEqual(result, newGame.SplitString("Today is Friday."));
+    }
 
   }
 }
