@@ -11,11 +11,20 @@ Console application that gathers both a word and sentence from a user, then chec
 
 User is prompted to type in the word. First spec will check if object is instantiated. 
 * Input: world
-* Output: Object is instantiated.
+* Output: Object Game is instantiated.
 
-User inputs a sentence when prompted and application returns how many times previously inputted word appears in the sentence.
+User is prompted to type in a sentence.
 * Input: "Hello world"
-* Output: "Word 'world' appears 1 time in your sentence".
+* Output: Applications takes in the sentence so that object Game is instantiated with two properties: "Hello world" and "world".
+
+Application splits the sentence into a string array;
+* Input: "Hello world";
+* Output: {'Hello', 'world'}
+
+Application takes the previously inputted word and calculates how many times it appears in the newly created string array:
+* Input:  {'Hello', 'world'}, 'world'
+* Output: "Word "world" appears 1 time in your sentence.
+
 
 ## Setup/Installation Requirements
 
