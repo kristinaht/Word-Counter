@@ -15,9 +15,10 @@ namespace WordCounter.Tests
       Assert.AreEqual(typeof(Game), newGame.GetType());
     }
 
-    GameConstructor_CreatesInstanceOfGameWTwoParameters_Game()
+    [TestMethod]
+    public void GameConstructor_CreatesInstanceOfGameWTwoParameters_Game()
     {
-      Game newGame = new Game("world", "Hello world");
+      Game newGame = new Game("world", "Hello world.");
       
       Assert.AreEqual(typeof(Game), newGame.GetType());
     }
