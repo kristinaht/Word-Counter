@@ -9,15 +9,15 @@ Console application that gathers both a word and sentence from a user, then chec
 
 ## Project Specifications
 
-User is prompted to type in the word. First spec will check if object is instantiated. 
+User is prompted to type in the word to instantiate a Game object. 
 * Input: world
 * Output: Object Game is instantiated.
 
-User is prompted to type in a sentence.
+User is prompted to type in a sentence so that object Game can be instantiated with both parameters (Word & Sentence).
 * Input: "Hello world"
 * Output: Applications takes in the sentence so that object Game is instantiated with two properties: "Hello world" and "world".
 
-Application splits the sentence into a string array;
+Application takes the sentence user provide and splits it into a string array.
 * Input: "Hello world";
 * Output: {'Hello', 'world'}
 
