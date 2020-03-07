@@ -15,9 +15,12 @@ namespace WordCounter.Models
       Sentence = sentence;
     }
     
-    public string[] SplitString(string sentence)
+    public int SplitString(string sentence)
     {
-      
+      char[] splitters = { ' ', ',', '.', ':' };
+      string[] stringArray = Sentence.Split(splitters);
+      return 0;
     }
+
   }
 }
