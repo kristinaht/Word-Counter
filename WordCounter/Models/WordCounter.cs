@@ -22,5 +22,10 @@ namespace WordCounter.Models
       return stringArray;
     }
 
+    // public int WordCount()
+    // {
+
+    // }
+
   }
 }

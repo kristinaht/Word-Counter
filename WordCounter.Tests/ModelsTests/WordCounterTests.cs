@@ -29,10 +29,14 @@ namespace WordCounter.Tests
 
     public void SplitString_SplitStringIntoStringArray_StringArray()
     {
-      string sampleString = "Today is Friday.";
-      Game testGame = new Game("hi", sampleString);
+      string sampleString = "Hello, world";
+      Game testGame = new Game("Hello", sampleString);
       Assert.AreEqual(typeof(string[]), (testGame.SplitString(sampleString)).GetType());
     }
-
+    // [TestMethod]
+    // public void WordCount_CalculateWordAppearanceInSentence_Integer()
+    // {
+    //   Game testGame = new Game("hello", "hello, world")
+    // }
   }
 }
