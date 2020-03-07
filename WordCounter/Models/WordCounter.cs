@@ -22,10 +22,17 @@ namespace WordCounter.Models
       return stringArray;
     }
 
-    // public int WordCount()
-    // {
-
-    // }
-
+    public int WordCount()
+    {
+      int wordCount = 0;
+      foreach(string item in stringArray)
+      {
+        if(item == Word)
+        {
+          wordCount++;
+        }
+        return wordCount;
+      }
+    }
   }
 }
