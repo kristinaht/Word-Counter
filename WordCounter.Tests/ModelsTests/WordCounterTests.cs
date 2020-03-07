@@ -31,11 +31,6 @@ namespace WordCounter.Tests
     {
       string sampleString = "Today is Friday.";
       Game testGame = new Game("hi", sampleString);
-      
-      // string[] testArray = {"Today", "is", "Friday."};
-
-      // Console.WriteLine(testArray);
-      // Console.WriteLine(testGame.SplitString(sampleString));
       Assert.AreEqual(typeof(string[]), (testGame.SplitString(sampleString)).GetType());
     }
 
