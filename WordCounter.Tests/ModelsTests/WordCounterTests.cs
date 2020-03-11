@@ -27,16 +27,12 @@ namespace WordCounter.Tests
 
     [TestMethod]
 
-    public void SplitString_SplitStringIntoStringArray_StringArray()
+    public void WordCount_SplitStringIntoStringArray_StringArray()
     {
       string sampleString = "Hello, world";
       Game testGame = new Game("Hello", sampleString);
-      Assert.AreEqual(typeof(string[]), (testGame.SplitString(sampleString)).GetType());
+      Assert.AreEqual(1, testGame.WordCount(sampleString));
     }
-    [TestMethod]
-    public void WordCount_CalculateWordAppearanceInSentence_Integer()
-    {
-      Game testGame = new Game("hello", "hello, world");
-    }
+   
   }
 }

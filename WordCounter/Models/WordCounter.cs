@@ -15,24 +15,34 @@ namespace WordCounter.Models
       Sentence = sentence;
     }
     
-    public string[] SplitString(string sentence)
+    public int WordCount(string sentence)
+    //fka SplitString
     {
       char[] splitters = { ' ', ',', '.', ':' };
       string[] stringArray = Sentence.Split(splitters);
-      return stringArray;
-    }
-
-    public int WordCount()
-    {
-      int wordCount = 0;
+      // return stringArray;
+      int wordCount = 1;
       foreach(string item in stringArray)
       {
         if(item == Word)
         {
           wordCount++;
         }
-        return wordCount;
       }
+      return wordCount;
     }
+
+    // public int WordCount()
+    // {
+    //   int wordCount = 0;
+    //   foreach(string item in stringArray)
+    //   {
+    //     if(item == Word)
+    //     {
+    //       wordCount++;
+    //     }
+    //     return wordCount;
+    //   }
+    // }
   }
 }
