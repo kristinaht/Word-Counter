@@ -21,7 +21,7 @@ namespace WordCounter.Models
       char[] splitters = { ' ', ',', '.', ':' };
       string[] stringArray = Sentence.Split(splitters);
       // return stringArray;
-      int wordCount = 1;
+      int wordCount = 0;
       foreach(string item in stringArray)
       {
         if(item == Word)
