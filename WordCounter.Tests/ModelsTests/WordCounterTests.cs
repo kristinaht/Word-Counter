@@ -1,7 +1,6 @@
-using System;
 using WordCounter.Models;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System.Collections.Generic;
+
 
 namespace WordCounter.Tests
 {
@@ -13,7 +12,6 @@ namespace WordCounter.Tests
     public void CheckerConstructor_CreatesInstanceOfChecker_Checker()
     {
       Checker newChecker = new Checker("world");
-      
       Assert.AreEqual(typeof(Checker), newChecker.GetType());
     }
 
@@ -21,7 +19,6 @@ namespace WordCounter.Tests
     public void CheckerConstructor_CreatesInstanceOfCheckerWTwoParameters_Checker()
     {
       Checker newChecker = new Checker("world", "Hello world.");
-      
       Assert.AreEqual(typeof(Checker), newChecker.GetType());
     }
 

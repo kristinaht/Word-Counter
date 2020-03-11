@@ -7,7 +7,7 @@ namespace WordCounter.Models
 
     public Checker(string word)
     {
-        Word = word;
+      Word = word;
     }
     public Checker(string word, string sentence)
     : this(word)
