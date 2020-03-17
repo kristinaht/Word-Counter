@@ -30,7 +30,7 @@ namespace WordCounter.Tests
       string[] result = newChecker.SplitString(sentence);
       string[] testArray = {"hello", "world"};
 
-      Assert.AreEqual(result, testArray);
+      Assert.AreEqual(result[0], testArray[0]);
     }
 
     [TestMethod] //test for spec #4
