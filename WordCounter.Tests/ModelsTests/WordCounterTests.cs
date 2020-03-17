@@ -37,9 +37,13 @@ namespace WordCounter.Tests
 
     public void WordCount_ReturnsNumberOfTimesWordAppearsInSentence_Int()
     {
-      // string sampleString = "Hello, world";
-      // Checker testChecker = new Checker("Hello", sampleString);
-      // Assert.AreEqual(1, testChecker.WordCount(sampleString));
+      string sampleString = "Hello, world";
+      Checker testChecker = new Checker("Hello", sampleString);
+      string [] stringArray = testChecker.SplitString(sampleString);
+
+      int wordCountResult = testChecker.WordCount(stringArray);
+
+      Assert.AreEqual(1, wordCountResult);
     }
   }
 }
