@@ -45,5 +45,18 @@ namespace WordCounter.Tests
 
       Assert.AreEqual(1, wordCountResult);
     }
+
+    [TestMethod] //test for spec #5
+      public void WordCount_AccountsForFullWordsOnly_Int()
+      {
+       Checker newChecker = new Checker("cat", "I saw a cat and another cat in front of the cathedral");
+
+      string [] stringArray = newChecker.SplitString("I saw a cat and another cat in front of the cathedral");
+
+      int wordCountResult = newChecker.WordCount(stringArray);
+
+      Assert.AreEqual(2, wordCountResult);
+
+      }
   }
 }

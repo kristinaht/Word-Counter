@@ -25,11 +25,11 @@ Console application that gathers both a word and sentence from a user, then chec
 * Input:  {'Hello', 'world'}, 'world'
 * Output: "Word "world" appears 1 time in your sentence.
 
-Application accounts for full words only.
-* Input: "cat", "I saw a cat in front of the cathedral"
-* Output: 1
+5. Application accounts for full words only.
+* Input: "cat", "I saw a cat and another cat in front of the cathedral"
+* Output: 2
 
-Word Counter application is not case sensitive
+6. Word Counter application is not case sensitive
 * Input: "World", "A new world"
 * Output: 1
 
