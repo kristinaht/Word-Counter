@@ -8,27 +8,38 @@ namespace WordCounter.Tests
   public class CheckerTest
   {
 
-    [TestMethod]
+    [TestMethod] //test for spec #1
     public void CheckerConstructor_CreatesInstanceOfChecker_Checker()
     {
       Checker newChecker = new Checker("world");
       Assert.AreEqual(typeof(Checker), newChecker.GetType());
     }
 
-    [TestMethod]
+    [TestMethod] //test for spec #2
     public void CheckerConstructor_CreatesInstanceOfCheckerWTwoParameters_Checker()
     {
       Checker newChecker = new Checker("world", "Hello world.");
       Assert.AreEqual(typeof(Checker), newChecker.GetType());
     }
-
-    [TestMethod]
-
-    public void WordCount_SplitStringIntoStringArray_StringArray()
+    [TestMethod] //test for spec #3
+    public void SplitString_SplitsSentenceIntoStringArray_StringArray()
     {
-      string sampleString = "Hello, world";
-      Checker testChecker = new Checker("Hello", sampleString);
-      Assert.AreEqual(1, testChecker.WordCount(sampleString));
+      string sentence = "hello world";
+      Checker newChecker = new Checker("world", sentence);
+
+      string[] result = newChecker.SplitString(sentence);
+      string[] testArray = {"hello", "world"};
+
+      Assert.AreEqual(result, testArray);
+    }
+
+    [TestMethod] //test for spec #4
+
+    public void WordCount_ReturnsNumberOfTimesWordAppearsInSentence_Int()
+    {
+      // string sampleString = "Hello, world";
+      // Checker testChecker = new Checker("Hello", sampleString);
+      // Assert.AreEqual(1, testChecker.WordCount(sampleString));
     }
   }
 }

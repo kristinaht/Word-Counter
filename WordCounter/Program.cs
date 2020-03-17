@@ -17,8 +17,8 @@ namespace WordCounter
       string sentence = sentenceMix.ToLower();
       Checker newChecker = new Checker(word, sentence);
       Console.WriteLine(newChecker.Sentence);
-      int wordCount = newChecker.WordCount(sentence);
-      Console.WriteLine("Word '" + word + "'" + "appears " + wordCount + " time/s in the '" + sentence + "' sentence.");
+      // int wordCount = newChecker.WordCount(sentence);
+      // Console.WriteLine("Word '" + word + "'" + "appears " + wordCount + " time/s in the '" + sentence + "' sentence.");
 
       
     }

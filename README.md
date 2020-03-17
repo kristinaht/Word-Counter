@@ -9,19 +9,19 @@ Console application that gathers both a word and sentence from a user, then chec
 
 ## Project Specifications
 
-User is prompted to type in the word to instantiate a Game object. 
+1. User is prompted to type in the word to instantiate a Game object. 
 * Input: world
 * Output: Object Game is instantiated.
 
-User is prompted to type in a sentence so that object Game can be instantiated with both parameters (Word & Sentence).
+2. User is prompted to type in a sentence so that object Game can be instantiated with both parameters (Word & Sentence).
 * Input: "Hello world"
 * Output: Applications takes in the sentence so that object Game is instantiated with two properties: "Hello world" and "world".
 
-Application takes the sentence user provide and splits it into a string array.
+3. Application takes the sentence user provide and splits it into a string array.
 * Input: "Hello world";
 * Output: {'Hello', 'world'}
 
-Application takes the previously inputted word and calculates how many times it appears in the newly created string array:
+4. Application takes the previously inputted word and calculates how many times it appears in the newly created string array:
 * Input:  {'Hello', 'world'}, 'world'
 * Output: "Word "world" appears 1 time in your sentence.
 
