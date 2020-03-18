@@ -9,7 +9,7 @@ namespace WordCounter.Tests
   {
 
     [TestMethod] //test for spec #1
-    public void CheckerConstructor_CreatesInstanceOfChecker_Checker()
+    public void CheckerConstructor_CreatesInstanceOfCheckerWithOneParameter_Checker()
     {
       Checker newChecker = new Checker("world");
       Assert.AreEqual(typeof(Checker), newChecker.GetType());
