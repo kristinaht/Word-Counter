@@ -7,12 +7,12 @@ namespace WordCounter.Models
 
     public Checker(string word)
     {
-      Word = word;
+      Word = word.ToLower();
     }
     public Checker(string word, string sentence)
     : this(word)
     {
-      Sentence = sentence;
+      Sentence = sentence.ToLower();
     }
     
     public string[] SplitString(string sentence)

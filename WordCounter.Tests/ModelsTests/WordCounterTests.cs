@@ -56,7 +56,18 @@ namespace WordCounter.Tests
       int wordCountResult = newChecker.WordCount(stringArray);
 
       Assert.AreEqual(2, wordCountResult);
+      }
 
+      [TestMethod] //test for spec #6
+      public void WordCount_ReturnsIntWithoutRegardsToWordCapitalization_Int()
+      {
+        Checker newChecker = new Checker("World", "A new world");
+
+      string [] stringArray = newChecker.SplitString("A new world");
+
+      int wordCountResult = newChecker.WordCount(stringArray);
+
+      Assert.AreEqual(1, wordCountResult);
       }
   }
 }
